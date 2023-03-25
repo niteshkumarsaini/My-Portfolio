@@ -1,5 +1,4 @@
 import React from 'react'
-
 const Skills = ({ mybtn }) => {
     const [edBtn, setEdBtn] = React.useState(1);
     function ChangeColor(id) {
