@@ -1,38 +1,1201 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  background-color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.heading {
+  font-size: 1.7em;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.navHeading {
+  /* margin: 2vh; */
+  width: 25vw;
+  /* border: 2px solid blue; */
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.navbar {
+  min-height: 8vh;
+  /* position: fixed; */
+  display: flex;
+  top:0;
+  /* background-color:green; */
+
+  align-items: center;
+  color: white;
+  flex-direction: row;
+
+  /* border: 2px solid green; */
+
+
+}
+
+.ulContainer  {
+  width: 80vw;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  /* border: 2px solid red; */
+
+
+
+
+}
+.links{
+  color: white;
+  text-decoration: none;
+  /* border: 2px solid white; */
+}
+.links:hover{
+  color:red;
+}
+
+.ulContainer li{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  float: right;
+  margin: 1.2vh 2vh;
+  color: white;
+
+  cursor: pointer;
+  font-size: 1.3em;
+
+}
+
+.ulContainer li:hover {
+  color: red;
+}
+
+.middleSection {
+  height: 85vh;
+  display: flex;
+  width: 98.6vw;
+  /* position:fixed; */
+  /* background-attachment: fixed; */
+  /* margin-top: 6vh; */
+  /* background-color: pink; */
+  /* border: 2px solid red; */
+}
+
+.leftCont {
+  /* background-color: green; */
+  width: 50vw;
+  display: flex;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  flex-direction: column;
+  flex-wrap: auto;
+  /* flex-wrap:wrap; */
+  /* justify-content: space-around; */
+
+
+  height: 85vh;
+  font-size: 0.8em;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.rightCont {
+  /* background-color: blue; */
+  /* border: 2px solid green; */
+  width: 48.6vw;
+  height: 85vh;
+
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.upperHeading {
+  /* border: 2px solid white; */
+  display: inline;
+  font-weight: 100;
+  /* position: absolute; */
+  /* margin-bottom: 100px; */
+
+  font-size: 1.7em;
+
+
+}
+
+.upperText {
+  /* border: 2px solid pink; */
+  height: 4vh;
+
+  margin: 17vw 10vw 0px 15vh;
+}
+
+.lowerText {
+  color: white;
+  margin-top: 3px;
+  /* border: 2px solid red; */
+  width: 30vw;
+
+  margin-left: 15vh;
+  font-size: 3.9em;
+}
+
+.imageCont {
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+
+}
+.active{
+  color: red;
+}
+
+#image {
+  /* border: 6px ridge white; */
+  border-radius: 100%;
+  margin-top: 22vh;
+  height: 50vh;
+  width: 52vh;
+
+}
+
+.secondMain {
+  /* background-color: green; */
+
+
+  
+  width: 98.5vw;
+  /* border: 2px solid red; */
+  height: 110vh;
+  /* position:absolute; */
+
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin-bottom: 15vh;
+  margin-top: 7vh;
+  overflow: hidden;
+  /* position:absolute; */
+  /* padding-bottom: 2vh; */
+
+}
+
+.secondContainer {
+  
+  /* background-color: grey; */
+  height: 55vh;
+  display: flex;
+  /* border: 2px solid wheat; */
+  justify-content: space-between;
+  width: 80vw;
+}
+
+.aboutCont {
+  /* background-color: blue; */
+  height: 100vh;
+  width: 30vw;
+  justify-content: center;
+  /* align-items: center; */
+  margin-top: 12vh;
+  display: flex;
+
+}
+
+.skillsCont {
+  /* background-color: brown; */
+  height: 100vh;
+  /* border: 2px solid white; */
+  width: 50vw;
+
+}
+
+#aboutImage {
+  height: 58vh;
+  width: 25vw;
+  border-radius: 30px;
+}
+
+.skillHeading {
+  font-size: 10vh;
+  font-weight: 600;
+}
+
+.skillHeadCont {
+  /* border: 2px solid yellow; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 15vh;
+  display: flex;
+
+  padding-left: 6vh;
+}
+
+.skillparaText {
+  color: white;
+
+  /* border: 2px solid wheat; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.1em;
+  line-height: 28px;
+  font-weight: normal;
+  padding: 1.6vh;
+  padding-top: 4vh;
+  /* padding-top:0; */
+  letter-spacing: 1px;
+
+}
+
+.skillpara {
+  /* border: 2px solid pink; */
+  margin-left: 4.5vh;
+}
+
+.btn {
+  color: white;
+  /* border: 2px solid red; */
+  margin-left: 5vh;
+  margin-top: 1.5vh;
+}
+
+.btn button {
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  margin-left: 8vh;
+
+}
+
+.btn button:hover {
+  color: white;
+  /* font-size: 1.3rem; */
+  border-bottom-right-radius: 5px;
+  border-bottom: 4px solid rgba(237, 23, 23, 0.652);
+}
+
+.skills {
+  /* border: 2px solid white; */
+  color: white;
+
+}
+
+.skillHeadingss {
+  /* border: 2px solid red; */
+  padding-top: 1vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* padding-left: 6vh; */
+  margin-left: 12.8vh;
+
+
+}
+
+#p1 {
+  font-size: 1em;
+  margin-bottom: 4px;
+  margin-top: 1.5vh;
+  color: rgb(239, 120, 140);
+
+}
+
+#p2 {
+  font-size: 1em;
+
+}
+
+.skill- {
+  margin-top: 2vh;
+}
+
+#Myactive {
+  color: white;
+  border-bottom-right-radius: 5px;
+  border-bottom: 4px solid rgba(237, 23, 23, 0.652);
+}
+
+.eduBtn {
+  display: flex;
+  /* border: 2px solid blue; */
+  width: 4vw;
+
+  margin-top: 4vh;
+}
+
+.edButton {
+  font-size: 1em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-left: 2vh;
+  cursor: pointer;
+}
+
+.edButton:hover {
+  color: red;
+}
+.sectionThird{
+  /* height: auto; */
+  width: 98.7vw;
+  /* background-color: red; */
+  margin-top: 7vh;
+  /* border: 2px solid white; */
+}
+.thirdHeadingCont{
+  /* background-color: blue; */
+  /* border: 2px solid pink; */
+  /* height: 27vh; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.thirdHeading{
+  color: white;
+  /* border: 2px solid green; */
+  font-size: 10vh;
+  padding-left: 8vw;
+  height: 15vh;
+  font-weight: 600;
+}
+.projectCont{
+  /* background-color: pink; */
+  height: 50vh;
+  cursor: pointer;
+  background-position: center;
+  width: 22vw;
+  margin-top: 8vh;
+  /* border: 2px solid red; */
+  
+  margin-left: 8vw;
+  margin-right: 0;
+  border-radius: 25px;
+}
+.projectDisplay{
+  /* border: 2px solid blue; */
+  /* height: 80vh; */
+  display: flex;
+  margin-top: 1vh;
+  /* padding-bottom: 15vh; */
+  flex-wrap: wrap;
+}
+.projectImage{
+  height: 50vh;
+  width: 22vw;
+  cursor: pointer;
+}
+.imgP{
+  color: white;
+  /* border: 2px solid red;  */
+  /* height: 50vh; */
+  border-radius: 3.5vh;
+  background:linear-gradient(red,white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+  width: 22vw;
+  /* background: transparent; */
+  height: 2vh;
+
+  position: absolute;
+
+}
+
+.projectCont:hover{
+  opacity: 0.8;
+}
+.insideContDiv{
+  background-color: white;
+ 
+  height: 50px;
+  border-radius: 50%;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  font-size: 1.6em;
+  margin:2vh 8vw;
+  align-items: center;
+  color: red;
+}
+.insideCont{
+  /* border: 2px solid black; */
+  padding: 0 1vw;
+}
+.transp{
+  background: transparent;
+  margin-top: 2vh;
+  
+}
+.displayP{
+  visibility: hidden;
+}
+.ServicesContiner{
+  /* height: 55vh; */
+
+  /* background-color: orange; */
+  /* border: 2px solid white; */
+  margin-top: 7vh;
+  margin-bottom: 13vh;
+  
+}
+.ServiceBox{
+  border: 2px solid white;
+  height: 38vh;
+cursor: pointer;
+border-radius:30px;
+  /* margin-top: 3vh; */
+  background-color:rgba(204, 198, 187, 0.725);
+  display: flex;
+  color: white;
+  width: 19.5vw;
+  
+}
+.serviceDisplay{
+  display: flex;
+  padding-bottom: 6vh;
+  margin-top: 8vh;
+  /* border: 2px solid; */
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.ServiceBox:hover{
+  background-color: rgb(191, 25, 25);
+}
+.boxContainer{
+  background: transparent;
+}
+.boxContainer i{
+  font-size: 3em;
+  margin-top: 5vh;
+  margin-left: 8vw;
+  margin-bottom: 2vh;
+  background: transparent;
+  
+}
+.boxContainer h1{
+  /* margin-left: 8vh; */
+  background: transparent;
+  /* margin-bottom: 0.5vh; */
+  
+ 
+}
+.boxContainer p{
+  background-color: transparent;
+  margin: 0 2vh;
+}
+.headingCon{
+  text-align: center;
+  font-size: 1.2em;
+  /* display: flex; */
+  background-color: transparent;
+  margin-bottom: 2vh;
+}
+.ResumeContainer{
+  /* border: 2px solid white; */
+  display: flex;;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  margin-top: 5vh;
+  margin-bottom: 4vh;
+}
+
+.ContactDiv{
+  /* height: 55vh; */
+  background-color: black;
+  display: flex;
+  /* border: 2px solid white; */
+}
+.MoreProject{
+  height: 20vh;
+  align-items: center;
+  /* border: 2px solid white; */
+  display: flex;
+  justify-content: center;
+
+}
+.more{
+  color: white;
+  font-size: 2.5vh;
+  width: 8.5vw;
+  height: 5.5vh;
+  border-radius: 6px;
+  cursor: pointer;
+  /* background-color: red; */
+  border: 1px solid white;
+}
+
+.more:hover{
+  background-color: rgba(178, 5, 5, 0.833);
+  /* font-weight: bold; */
+}
+.leftContact{
+  width: 40vw;
+  background-color: black;
+  height: 55vh;
+}
+.rightContact{
+
+  width: 60vw;
+  background-color: black;
+  /* border: 2px solid wheat; */
+  height: 60vh;
+}
+.insh{
+background-color: transparent;
+text-align: center;
+}
+.insideConth1{
+  display: inline;
+  /* background-color: yellow; */
+  background: transparent;
+}
+.headingContainer{
+/* color: white; */
+background-color: transparent;
+/* border: 2px solid wheat; */
+text-align: center;
+}
+.contactMe{
+  color: white;
+  font-size: 8vh;
+  background-color: transparent;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.emailContainer{
+  /* border: 2px solid pink; */
+  display: flex;
+  margin: 6vh 0;
+  padding: 0vh 10.5vw;
+  /* justify-content: center; */
+}
+.emailP{
+  color: white;
+  margin-left: 4vh;
+  /* border: 2px solid white; */
+  display: flex;
+  align-items: center;
+  font-size: 2.3vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.iController{
+  color: rgb(221, 55, 83);
+  font-size: 4vh;
+  
+
+}
+.workImage{
+  height:50vh;
+  width:22vw;
+  border-radius:25px;
+}
+.phoneContainer{
+  /* border: 2px solid pink; */
+  display: flex;
+  padding: 0vh 10.5vw;
+  /* margin: 0 5vh; */
+  /* justify-content: center; */
+}
+.mphone{
+  color: white;
+  margin-left: 4vh;
+  /* border: 2px solid white; */
+  display: flex;
+  align-items: center;
+  font-size: 2.3vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.socialMedia{
+  /* border: 2px solid white; */
+  margin: 4vh 9.9vw;
+  width: 11vw;
+}
+.iController2{
+  color:white;
+  font-size: 4vh;
+  cursor: pointer;
+  margin: 0vh 2vh;
+
+}
+
+.downloadCV{
+font-size: 2.8vh;
+color: white;
+cursor: pointer;
+height: 5.4vh;
+margin: 0vh 11vw;
+border-radius: 8px;
+width: 10.2vw;
+background-color: rgb(238, 46, 78);
+}
+.resumeBtn{
+  margin: 7vh 0;
+  /* border: 2px solid white; */
+}
+.inputD{
+  /* border: 2px solid white; */
+  display: flex;
+  flex-direction: column;
+}
+.inputContact{
+  color: white;
+  background-color: rgb(53, 50, 50);
+  height: 7vh;
+  width: 43vw;
+  font-size: 2.5vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 7px;
+  padding-left: 0.5vw;
+
+  margin-bottom: 6vh;
+}
+.inputTextArea{
+  background-color: rgb(62, 57, 57)e;
+  border-radius: 7px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.8vh;
+  padding: 1vh;
+  color: white;
+  width: 43vw;
+
+}
+.inputContact::placeholder{
+  font-size: 2.4vh;
+  padding: 1vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.inputTextArea::placeholder{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+padding: 1vh;
+
+  font-size: 2.6vh;
+}
+.ContactDiv{
+  margin-top: 13vh;
+  margin-bottom: 15vh;
+  
+}
+.submitBtn{
+  font-size: 2.8vh;
+color: white;
+cursor: pointer;
+height: 5.4vh;
+margin-top: 3vh;
+border-radius: 8px;
+width: 8vw;
+background-color: rgb(238, 46, 78);
+}
+.btnOuter{
+  width: 43vw;
+  display: flex;
+  /* border: 2px solid wheat; */
+
+  justify-content: center;
+}
+
+@media screen and (max-width:2334px) {
+
+
+
+
+
+
+
+
+  .ulContainer{
+    font-size: 1.1em;
   }
-  to {
-    transform: rotate(360deg);
+  .navHeading{
+    font-size: 1.2em;
   }
+ 
+  .socialMedia i{
+    font-size: 1.7em;
+  }
+.downloadCV{
+  margin-left: 10.3vw;
+}
+}
+
+
+
+@media screen and (max-width:1282px) {
+  .ulContainer{
+    font-size: 1.2em;
+  }
+
+
+
+.serviceDisplay{
+  /* border: 2px solid white; */
+  display: flex;
+  /* justify-content: left; */
+}
+.ServiceBox{
+  /* margin: 0 3vw; */
+  font-size: 0.9em;
+}
+.socialMedia{
+  font-size: 0.7em;
+  width: 80vw;
+}
+.downloadCV{
+  font-size: 1.2em;
+}
+  
+}
+
+@media screen and (max-width:1024px) {
+  .ulContainer{
+    font-size: 1.0em;
+  }
+
+.navHeading{
+  font-size: 1.1em;
+}
+
+.serviceDisplay{
+  /* border: 2px solid white; */
+  display: flex;
+  /* justify-content: left; */
+}
+.ServiceBox{
+  /* margin: 0 3vw; */
+  font-size: 0.8em;
+  width: 25vw;
+  border-radius: 38px;
+  height: 40vh;
+}
+.socialMedia{
+  font-size: 0.7em;
+  width: 80vw;
+}
+.downloadCV{
+  font-size: 1em;
+}
+  
+}
+
+@media screen and (min-width:481px) and (max-width:768px)  {
+  .ulContainer{
+    font-size: 1.0m;
+  }
+.navHeading{
+  font-size: 1em;
+}
+.skillparaText{
+  font-size: 1em;
+}
+.secondMain{
+  /* display: flex;
+  flex-direction: row; */
+  height: 190vh;
+  /* border: 2px solid white; */
+}
+.secondContainer{
+  /* border: 2px solid pink; */
+  height: auto;
+  display: flex;
+  flex-direction:column;
+  justify-content: left;
+  align-items: center;
+
+
+}
+.insideContDiv{
+  /* border: 2px solid blue; */
+  margin:0;
+  margin: 2vw 15vw ;
+}
+.skillpara{
+  margin-top: 0vh;
+  /* border: 2px solid wheat; */
+}
+.skillparaText{
+  font-size: 0.8em;
+  
+}
+.aboutCont{
+  /* border: 2px solid red; */
+  width: 40vw;
+  margin-top: 0;
+  height: auto;
+  margin-bottom: 5vh;
+}
+#aboutImage{
+  width: 55vw;
+
+}
+.submitBtn{
+  width: 10vw;
+  font-size: 1.1em;
+}
+.thirdHeadingCont{
+  /* border: 2px solid white; */
+  display: flex;
+  justify-content: center;
+  
+  
+}
+.projectCont{
+  /* border: 2px solid blue; */
+  width: 40vw;
+}
+.imgP{
+  width: 40vw;
+}
+.workImage{
+  /* border: 2px solid red; */
+  width: 40vw;
+
+}
+.more{
+  width: 12vw;
+}
+.leftContact{
+  /* border: 2px solid wheat; */
+  margin-left: 3vw;
+}
+
+
+.contactMe{
+  font-size: 3em;
+}
+
+.emailContainer{
+  /* border: 2px solid wheat; */
+  margin: 0;
+  margin-top: 2vh;
+  width: auto;
+  padding: 0;
+  padding-left: 2vw;
+}
+
+.phoneContainer{
+  /* border: 2px solid wheat; */
+  margin: 0;
+  margin-top: 2vh;
+  width: auto;
+  padding: 0;
+  padding-left: 2vw;
+}
+.socialMedia{
+  /* border: 2px solid green; */
+  font-size: 2em;
+}
+
+
+
+
+.thirdHeading{
+  margin: 0;
+  padding: 0;
+}
+.ServiceBox{
+  width: 40vw;
+  margin-top: 6vh;
+}
+.serviceDisplay{
+  /* border: 2px solid red; */
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skillHeadCont{
+  font-size: 1em;
+  /* border: 2px solid wheat; */
+ display: flex;
+ justify-content: center;
+  height: 11vh;
+}
+.skillHeading{
+  font-size: 3.8em;
+  /* margin-bottom: 0; */
+}
+
+.btn{
+  /* border: 2px solid white; */
+  width: 48vw;
+}
+.skillsCont{
+  /* border: 2px solid blue; */
+  height: auto;
+  width: auto;
+  margin-top: 0px;
+
+}
+
+
+.serviceDisplay{
+  /* border: 2px solid white; */
+  display: flex;
+  /* justify-content: left; */
+}
+.ServiceBox{
+  /* margin: 0 3vw; */
+  font-size: 0.9em;
+}
+.socialMedia{
+  font-size: 1em;
+  width: 80vw;
+}
+.rightContact{
+  /* border: 2px solid wheat; */
+  /* padding-left: 5vw; */
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  height: auto;
+}
+.downloadCV{
+  font-size: 1.0em;
+  width: 16vw;
+}
+  
+}
+
+@media screen and (min-width:320px) and (max-width:480px){
+  .ulContainer{
+    /* border: 2px solid wheat; */
+    font-size: 0.7em;
+    display: flex;
+    /* flex-wrap: wrap; */
+  }
+
+.navHeading{
+  font-size: 0.7em;
+  margin-right: 3vw;
+}
+.middleSection{
+  /* border: 2px solid white; */
+  display: flex;
+  flex-direction: column;
+}
+.leftCont{
+  /* border: 2px solid red; */
+  width: auto;
+}
+  .rightCont{
+    /* border: 2px solid blue; */
+    width: auto;
+
+  }
+  #image{
+   /* border: 2px solid green;  */
+   margin-top: 7vh;
+   padding: 0;
+  }
+
+
+.lowerText{
+  /* border: 2px solid pink; */
+  width: auto;
+  font-size: 3.4em;
+}
+.secondMain{
+  /* border: 2px solid rgb(103, 89, 60); */
+  display: flex;
+  margin: 0;
+  margin-top: 2vh;
+  /* height: 170vh; */
+  justify-content: center;
+  align-items: center;
+ 
+  width: auto;
+  height: 165vh;
+ 
+}
+.secondContainer{
+  /* border: 2px solid rgb(59, 76, 59); */
+  display: flex;
+  flex-direction: column;
+  height:auto;
+
+}
+.skills{
+  /* border: 2px solid blue; */
+  height: auto;
+  
+}
+
+.aboutCont{
+  /* border: 2px solid blue; */
+  margin: 0;
+  width: auto;
+  height: auto;
+
+
+}
+.skillsCont{
+  /* border: 2px solid rgb(186, 115, 127); */
+  width: auto;
+}
+.skillHeadCont{
+  /* border: 2px solid blue; */
+  width: auto;
+  
+
+}
+.skillHeading{
+  /* border: 2px solid red; */
+  font-size: 3.6em;
+
+}
+.skillpara{
+  /* border: 2px solid brown; */
+  padding: 0;
+}
+.skillparaText{
+  /* border: 2px solid orange ; */
+  font-size: 0.8em;
+  padding-top: 0;
+}
+.btn{
+  /* border: 2px solid wheat; */
+  display: flex;
+
+justify-content: left;
+}
+.skillbt{
+padding-left: 0;
+margin-left: 0;
+  
+}
+.btn button{
+  margin-left: 5vh;
+}
+
+
+#aboutImage{
+  width: auto;
+  /* border: 2px solid red; */
+  width: 75vw;
+
+}
+.sectionThird{
+  /* border: 2px solid white; */
+  margin-top: 2vh;
+}
+.thirdHeading{
+  /* border: 2px solid pink; */
+/* width: auto; */
+padding: 0;
+font-size: 3.6em;
+height: auto;
+}
+.thirdHeadingCont{
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  
+
+}
+.projectDisplay{
+  /* border: 2px solid orange; */
+  display: flex;
+  justify-content: center;
+}
+.projectCont{
+  /* border: 2px solid white; */
+  width: 60vw;
+  margin: 0;
+  /* margin: 0; */
+  margin-top: 4vh;
+  
+}
+.imgP{
+  /* border: 2px solid blue; */
+  width: 60vw;
+}
+.workImage{
+  /* border: 2px solid green; */
+  width: 60vw;
+}
+.MoreProject{
+  /* border: 2px solid white; */
+  padding: 0;
+  height: auto;
+  margin-top: 5vh;
+  margin-bottom: 6vh;
+  /* margin-bottom: 10vh; */
+}
+.more{
+  width: 17vw;
+  height: 5vh;
+  margin: 0;
+  font-size: 1em;
+
+}
+.ContactDiv{
+  /* border: 2px solid white; */
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin-bottom: 0;
+}
+.leftContact{
+  /* border: 2px solid red; */
+  width: auto;
+}
+.rightContact{
+  /* border: 2px solid green; */
+  width: auto;
+}
+.downloadCV{
+  height: 5.5vh;
+  font-size: 0.8em;
+  width: 19vw;
+}
+.inputD{
+  /* border:2px solid green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ServicesContiner{
+  /* border: 2px solid wheat; */
+  margin-top: 4vh;
+}
+
+
+
+.serviceDisplay{
+  margin-top: 0;
+  /* border: 2px solid orange; */
+}
+.boxContainer i{
+  /* border: 2px solid red; */
+  margin: 0vh 25vw;
+  margin-top: 6vh;
+  margin-bottom: 2vh;
+}
+
+.ServiceBox{
+  /* border: 2px solid red; */
+  width: 60vw;
+  height: 36vh;
+  margin-top: 4vh;
+  font-size: 0.8em;
+}
+
+.boxPara{
+  font-size: 1.1em;
+}
+
+
+
+
+
+.inputContact{
+  /* border: 2px solid blue; */
+  height: 5vh;
+  width: 60vw;
+}
+.inputTextArea{
+  width: 60vw;
+  height: 15vh;
+}
+.submitBtn{
+
+  width: 17vw;
+  height: 5vh;
+  font-size: 0.8em;
+}
+.btnOuter{
+  /* border: 2px solid wheat; */
+  width: auto;
+}
 }
