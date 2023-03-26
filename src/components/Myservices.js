@@ -3,6 +3,12 @@ import ServiceData from './ServiceApi'
 import Nabvar from './Nabvar';
 const Myservices = () => {
 const [service,setService]=React.useState(ServiceData);
+
+function changeUrl(){
+  window.open('https://github.com/niteshkumarsaini?tab=repositories','_blank');
+}
+
+
   return (
    <>
    <Nabvar/>
@@ -16,7 +22,7 @@ const [service,setService]=React.useState(ServiceData);
 service.map((data,index)=>{
     return(
         <>
-         <div className="ServiceBox" key={index}>
+         <div className="ServiceBox" key={index} onClick={()=>{changeUrl()}}>
            <div className="boxContainer">
             <i class={data.icon}></i>
             <div className="headingCon">

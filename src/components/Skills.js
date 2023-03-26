@@ -140,11 +140,13 @@ const EduPart3 = () => {
 const EduPart2 = () => {
     return (
         <>
+         <div className="skill-">
             <p id='p1' style={{ fontSize: "1.2em", fontWeight: "500", color: "white" }}>XIIth</p>
             <p id='p2' style={{ marginTop: "1vh" }}><span style={{ color: "pink" }}>School :</span> DAV Public School</p>
             <p id='p2' style={{ marginTop: "1vh" }}><span style={{ color: "pink" }}>Board :</span>C.B.S.E</p>
-            <p id='p2' style={{ marginTop: "1vh" }}><span style={{ color: "pink" }}>CGPA :</span> 7.30</p>
+            <p id='p2' style={{ marginTop: "1vh" }}><span style={{ color: "pink" }}>CGPA :</span>7.30</p>
             <p id='p2' style={{ marginTop: "1vh" }}><span style={{ color: "pink" }}>Passout :</span> 2019</p>
+            </div>
         </>
     )
 }
