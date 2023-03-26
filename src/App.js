@@ -16,9 +16,9 @@ const App = () => {
 
   return (
     <div>
-<Router>
+<Router basename="My-Portfolio">
 <Routes>
-<Route path='/' element={<Main/>}></Route>
+<Route path='/My-Portfolio' element={<Main/>}></Route>
 <Route path='/about' element={<About/>}></Route>
 <Route path='/services' element={<Myservices/>}></Route>
 <Route path='/portfolio' element={<Mywork/>}></Route>
