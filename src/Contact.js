@@ -1,9 +1,38 @@
 import React from 'react'
-import Nabvar from './components/Nabvar'
+import Navbar from './components/Navbar'
 
 const Contact = () => {
+const [email,setEmail]=React.useState('');
+const [name,setName]=React.useState('');
+const [msg,setMsg]=React.useState('');
+
+function submitted(){
+  var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  if(name==='' || email==='' || msg===''){
+    window.alert('Please Enter a Valid Details before Submit!!');
+
+  }
+  else{
+    if(!(email.match(validRegex))){
+      window.alert('Write Valid Email.!');
+    }
+    else{
+    setTimeout(()=>{
+      document.getElementById('dataSub').innerText="Submitted";
+      setName('');
+      setMsg('')
+      setEmail('')
+      setTimeout(()=>{
+        document.getElementById('dataSub').innerText="Submit";
+      },600)
+    
+
+    })
+  }
+}
+}
+
   function cvDownload(){
-    console.log("J")
     window.open('document/RESUME.pdf','_blank')
 
   }
@@ -24,7 +53,7 @@ const Contact = () => {
   }
   return (
    <>
-   <Nabvar/>
+   <Navbar/>
    <div className="ContactDiv">
     <div className="leftContact">
       <div className="dataContainer">
@@ -60,12 +89,12 @@ const Contact = () => {
     </div>
     <div className="rightContact">
       <div className="inputD">
-      <input type="text" className='inputContact' placeholder='Enter Your Name' />
-      <input type="text" className='inputContact' placeholder='Enter Your Email'/>
-      <textarea name="" cols="30" rows="8" className='inputTextArea' placeholder='Enter Your Message'></textarea>
+      <input type="text" className='inputContact' placeholder='Enter Your Name' value={name} onChange={(e)=>setName(e.target.value)} />
+      <input type="text" className='inputContact' placeholder='Enter Your Email' value={email} onChange={(e)=>setEmail(e.target.value)}/>
+      <textarea name="" cols="30" rows="8" className='inputTextArea' placeholder='Enter Your Message' value={msg} onChange={(e)=>setMsg(e.target.value)}></textarea>
       </div>
       <div className="btnOuter">
-      <button className="submitBtn">Submit</button>
+      <button className="submitBtn" id="dataSub" onClick={()=>submitted()} >Submit</button>
       </div>
     </div>
 
