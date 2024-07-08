@@ -1,6 +1,6 @@
 import React from 'react'
 import WorkApi from './WorkApi'
-import Nabvar from './Nabvar'
+import Navbar from './Navbar'
 
 
 const Mywork = () => {
@@ -56,7 +56,7 @@ function openProject(item){
 
   return (
    <>
-   <Nabvar/>
+   <Navbar/>
    <div className="sectionThird">
     <div className="thirdHeadingCont">
         <h1 className="thirdHeading">My Work</h1>

@@ -1,10 +1,15 @@
 import React from 'react'
-import Nabvar from './Nabvar'
+import Navbar from './Navbar'
 
 const Main = () => {
+
+  function cvDownload(){
+    window.open('document/RESUME.pdf','_blank')
+
+  }
   return (
   <>
-  <Nabvar/>
+  <Navbar/>
   <div className="middleSection">
 <div className="leftCont">
   <div className="upperText">
@@ -13,6 +18,7 @@ const Main = () => {
   <div className="lowerText">
     <p>Hi, I'm <span style={{color:"red"}}>Nitesh</span></p>
     <p>Kumar From Kashipur</p>
+    <button className='downloadResume' onClick={()=>cvDownload()}>Download CV</button>
 
   </div>
 

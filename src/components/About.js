@@ -1,6 +1,6 @@
 import React from 'react'
 import Skills from './Skills';
-import Nabvar from './Nabvar';
+import Navbar from './Navbar';
 const About = () => {
   const [btnstate, setBtnstate] = React.useState(1);
   function My(e) {
@@ -17,11 +17,11 @@ const About = () => {
 
   return (
     <>
-    <Nabvar/>
+    <Navbar/>
       <div className="secondMain">
         <div className="secondContainer">
           <div className="aboutCont">
-            <img src="images/aboutMe.jpg" alt="" id='aboutImage' />
+            <img src="images/ab7.png" alt="" style={{color:"white"}} id='aboutImage' />
 
           </div>
           <div className="skillsCont">

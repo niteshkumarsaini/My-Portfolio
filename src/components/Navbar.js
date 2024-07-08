@@ -1,7 +1,7 @@
 import React from 'react'
 import {NavLink } from 'react-router-dom';
 
-const Nabvar = () => {
+const Navbar = () => {
   function hambar(){
    if(document.getElementById('ulCont').style.display==='' || document.getElementById('ulCont').style.display==="none"){
 document.getElementById('ulCont').style.display="flex";
@@ -35,4 +35,4 @@ else{
   )
 }
 
-export default Nabvar
+export default Navbar

@@ -21,7 +21,7 @@ user-select: none;
 .navHeading {
   /* margin: 2vh; */
   width: 25vw;
-  /* border: 2px solid blue; */
+ 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,6 +89,9 @@ display: none;
   font-size: 1.3em;
 
 }
+.pCertificate:hover{
+ color: orange;
+}
 
 .ulContainer li:hover {
   color: red;
@@ -119,6 +122,17 @@ display: none;
   height: 85vh;
   font-size: 0.8em;
   color: white;
+}
+.downloadResume{
+  font-size: 2.4vh;
+color: white;
+cursor: pointer;
+height: 5vh;
+margin: 0vh 0vw;
+border-radius: 8px;
+width: 8.6vw;
+background-color: rgb(238, 46, 78);
+  
 }
 
 .rightCont {
@@ -163,6 +177,7 @@ display: none;
   height: 85vh;
   display: flex;
   justify-content: center;
+  /* background-color: transparent; */
 
 }
 .active{
@@ -334,7 +349,7 @@ display: none;
 
 .eduBtn {
   display: flex;
-  /* border: 2px solid blue; */
+ 
   width: 4vw;
 
   margin-top: 4vh;
@@ -385,7 +400,7 @@ display: none;
   border-radius: 25px;
 }
 .projectDisplay{
-  /* border: 2px solid blue; */
+ 
   /* height: 80vh; */
   display: flex;
   margin-top: 1vh;
@@ -399,8 +414,6 @@ display: none;
 }
 .imgP{
   color: white;
-  /* border: 2px solid red;  */
-  /* height: 50vh; */
   border-radius: 3.5vh;
   background:linear-gradient(red,white);
   display: flex;
@@ -408,7 +421,6 @@ display: none;
   align-items: center;
   opacity: 0.8;
   width: 22vw;
-  /* background: transparent; */
   height: 2vh;
 
   position: absolute;
@@ -432,7 +444,6 @@ display: none;
   color: red;
 }
 .insideCont{
-  /* border: 2px solid black; */
   padding: 0 1vw;
 }
 .transp{
@@ -444,10 +455,6 @@ display: none;
   visibility: hidden;
 }
 .ServicesContiner{
-  /* height: 55vh; */
-
-  /* background-color: orange; */
-  /* border: 2px solid white; */
   margin-top: 7vh;
   margin-bottom: 13vh;
   
@@ -457,7 +464,6 @@ display: none;
   height: 38vh;
 cursor: pointer;
 border-radius:30px;
-  /* margin-top: 3vh; */
   background-color:rgba(204, 198, 187, 0.725);
   display: flex;
   color: white;
@@ -468,7 +474,6 @@ border-radius:30px;
   display: flex;
   padding-bottom: 6vh;
   margin-top: 8vh;
-  /* border: 2px solid; */
   flex-wrap: wrap;
   justify-content: space-around;
 }
@@ -487,10 +492,7 @@ border-radius:30px;
   
 }
 .boxContainer h1{
-  /* margin-left: 8vh; */
   background: transparent;
-  /* margin-bottom: 0.5vh; */
-  
  
 }
 .boxContainer p{
@@ -500,12 +502,10 @@ border-radius:30px;
 .headingCon{
   text-align: center;
   font-size: 1.2em;
-  /* display: flex; */
   background-color: transparent;
   margin-bottom: 2vh;
 }
 .ResumeContainer{
-  /* border: 2px solid white; */
   display: flex;;
   justify-content: center;
   align-items: center;
@@ -515,15 +515,12 @@ border-radius:30px;
 }
 
 .ContactDiv{
-  /* height: 55vh; */
   background-color: black;
   display: flex;
-  /* border: 2px solid white; */
 }
 .MoreProject{
   height: 20vh;
   align-items: center;
-  /* border: 2px solid white; */
   display: flex;
   justify-content: center;
 
@@ -535,7 +532,6 @@ border-radius:30px;
   height: 5.5vh;
   border-radius: 6px;
   cursor: pointer;
-  /* background-color: red; */
   border: 1px solid white;
 }
 
@@ -653,7 +649,7 @@ background-color: rgb(238, 46, 78);
   flex-direction: column;
 }
 .hamburger{
-  font-size: 2em;
+  font-size: 2.6em;
   /* border: 2px solid white; */
   cursor: pointer;
   display: none;
@@ -701,6 +697,7 @@ padding: 1vh;
   margin-bottom: 15vh;
   
 }
+
 .submitBtn{
   font-size: 2.8vh;
 color: white;
@@ -799,12 +796,17 @@ background-color: rgb(238, 46, 78);
 .downloadCV{
   font-size: 1em;
 }
-  
+.skillsCont{
+  height:120vh;
+}  
+
+
+
 }
 
 @media screen and (min-width:481px) and (max-width:768px)  {
   .ulContainer{
-    font-size: 1.0m;
+    font-size: 1.0em;
   }
 .navHeading{
   font-size: 1em;
@@ -981,6 +983,39 @@ background-color: rgb(238, 46, 78);
   width: 16vw;
 }
   
+
+.hamburger{
+  display: block;
+
+  /* border: 2px solid blue; */
+  margin-right: 3vw;
+width: 20vh;
+  
+
+}
+
+
+
+.navbar{
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  /* border: 2px solid white; */
+
+  flex-direction: column;
+  /* position: fixed; */
+}
+
+  .ulContainer{
+    /* border: 2px solid wheat; */
+    font-size: 0.7em;
+  display: none;
+
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+  }
+ 
+
 }
 
 @media screen and (max-width:480px){
@@ -1045,7 +1080,6 @@ background-color: rgb(238, 46, 78);
   width: auto;
   height: auto;
 
-
 }
 .skillsCont{
   /* border: 2px solid rgb(186, 115, 127); */
@@ -1056,6 +1090,15 @@ background-color: rgb(238, 46, 78);
   width: auto;
   
 
+}
+.secondMain{
+  /* border: 2px solid white; */
+  margin-top: 2vh;
+  height: auto;
+}
+.aboutCont{
+  /* border: 2px solid blue; */
+  height: 60vh;
 }
 .skillHeading{
   /* border: 2px solid red; */
@@ -1091,6 +1134,7 @@ margin-left: 0;
   width: auto;
   /* border: 2px solid red; */
   width: 75vw;
+  
 
 }
 .sectionThird{
@@ -1406,7 +1450,7 @@ padding: 0;
   width: 78vw;
 }
 .iController{
-  /* border: 2px solid blue; */
+ 
   font-size: 1.6em;
 }
 .emailP{
@@ -1419,18 +1463,15 @@ padding: 0;
 
 
 .ContactDiv{
-  /* border: 2px solid wheat; */
   margin-top: 2vh;
   
 }
 .socialMedia{
-  /* border: 2px solid white; */
   font-size: 1em;
   display: flex;
   justify-content: center;
 }
 .resumeBtn{
-  /* border: 2px solid blue; */
   display: flex;
   justify-content: center;
 
@@ -1465,3 +1506,22 @@ padding: 0;
 }
 
 }
+
+@media screen and (max-width:2334px) {
+  .downloadResume{
+    font-size: 1rem;
+  }
+}
+  @media screen and (max-width:1280px) {
+    .downloadResume{
+      font-size: 0.8rem;
+    }
+  }
+  @media screen and (max-width:766px) {
+    .downloadResume{
+      font-size: 0.8rem;
+      width: 95px;
+    }
+  }
+
+

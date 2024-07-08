@@ -16,7 +16,7 @@ const App = () => {
 
   return (
     <div>
-<Router>
+<Router basename='/My-Portfolio/'>
 <Routes>
 <Route path='/' element={<Main/>}></Route>
 <Route path='/about' element={<About/>}></Route>

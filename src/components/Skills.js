@@ -1,6 +1,8 @@
 import React from 'react'
 const Skills = ({ mybtn }) => {
     const [edBtn, setEdBtn] = React.useState(1);
+
+
     function ChangeColor(id) {
         const collection = document.getElementsByClassName('edButton');
         console.log(collection[id])
@@ -46,6 +48,29 @@ const Skills = ({ mybtn }) => {
 }
 
 const SkillsProg = () => {
+    function openCertificate(id){
+        if(id===1){
+            window.open('document/Python.pdf','_blank');
+    
+        }
+        else if(id===2){
+            window.open('document/java.pdf','_blank');
+    
+        }
+        else if(id===3){
+            window.open('document/React.pdf','_blank');
+    
+        }
+        else if(id===4){
+            window.open('document/javaIn.pdf','_blank');
+        }
+        else{
+            window.open('document/co.pdf','_blank');
+        }
+    }
+    
+    
+    
 
     return (
         <>
@@ -57,6 +82,9 @@ const SkillsProg = () => {
                 <p id='p2' style={{ marginTop: "1vh" }}>JSP/Servlet , JFrames</p>
                 <p id='p1'>Tools</p>
                 <p id='p2' >HTML , CSS , My SQL , After Effect</p>
+                <p id='p1'>Certificates (Links)</p>
+                <p id='p2' style={{display:"flex"}}><p className='pCertificate' onClick={()=>{openCertificate(1)}}>Python</p> ,<p style={{marginLeft:"1vh"}} className='pCertificate' onClick={()=>{openCertificate(2)}}>Java Training</p>,<p className='pCertificate' style={{marginLeft:"1vh"}} onClick={()=>{openCertificate(3)}}>React Js</p></p>
+                <p id='p2' style={{ marginTop: "1vh",display:"flex"}} ><p className='pCertificate' onClick={()=>{openCertificate(4)}}>Java Internship</p>,<p className='pCertificate' style={{marginLeft:"1vh"}} onClick={()=>{openCertificate(5)}}>Ambassador Program</p></p>
 
             </div>
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import ServiceData from './ServiceApi'
-import Nabvar from './Nabvar';
+import Navbar from './Navbar';
 const Myservices = () => {
 const [service,setService]=React.useState(ServiceData);
 
@@ -11,7 +11,7 @@ function changeUrl(){
 
   return (
    <>
-   <Nabvar/>
+   <Navbar/>
    <div className="ServicesContiner">
    <div className="thirdHeadingCont">
         <h1 className="thirdHeading">My Services</h1>
